@@ -417,6 +417,16 @@ video {
   height: auto;
 }
 
+:root,
+[data-theme] {
+  background-color: hsla(var(--b1) / var(--tw-bg-opacity, 1));
+  color: hsla(var(--bc) / var(--tw-text-opacity, 1));
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 :root {
   --p: 259 94% 51%;
   --pf: 259 94% 41%;
@@ -1986,10 +1996,6 @@ body[dir="rtl"] .checkbox:checked,
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
 }
@@ -2038,10 +2044,6 @@ body[dir="rtl"] .checkbox:checked,
 
 .grid-flow-col {
   grid-auto-flow: column;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
