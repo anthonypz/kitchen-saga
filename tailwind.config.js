@@ -9,7 +9,7 @@ module.exports = {
   // daisyUI config
   daisyui: {
     styled: true,
-    themes: ['light', 'dark', 'business'],
+    themes: false,
     base: true,
     utils: true,
     logs: true,
